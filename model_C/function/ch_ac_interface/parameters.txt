@@ -1,0 +1,16 @@
+ 
+ ------------------------------------------------------------
+    Input Parameters for CahnHilliard-AllenCahn Equation     
+ ------------------------------------------------------------
+ 
+      Nx                        = 128
+      Ny                        = 128
+      number of steps           = 10000
+      time difference           = 0.03
+      Mobility of con           = 0.5
+      mobility of phi           = 0.5
+      gradient coefficient con  = 1.5
+      gradient coefficient phi  = 1.5
+      computed time in seconds  = ****
+ 
+ ------------------------------------------------------------
