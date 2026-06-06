@@ -22,7 +22,8 @@ pure function Laplacian ( Nx, Ny, phi_)
   dy_ = 2.0
 
   
-  do concurrent ( i_ = 1 : Nx, j_= 1 : Ny )
+  do i_ = 1 , Nx
+    do j_= 1 , Ny
 
      jp_ = j_ + 1
      jm_ = j_ - 1
@@ -39,7 +40,7 @@ pure function Laplacian ( Nx, Ny, phi_)
      Laplacian(i_,j_) = ( phi_(ip_,j_) + phi_(im_,j_) + phi_(i_,jm_) + &
           phi_(i_,jp_) - 4.0*phi_(i_,j_) ) / ( dx_*dy_ )             
 
-
+    end do
   end do
 
 
