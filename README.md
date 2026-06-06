@@ -58,7 +58,7 @@ For our example, the use of interface block is shown below. It starts with the k
 
 # **External procedures for scalars and arrays**
 
-![interface](images/scalar_vs_array.jpg)
+![interface](images/scalar_vs_array.JPG)
 
 The example above shows the use of external statement for the `external subroutine`. When dealing with external functions, type must be declared with [external keyword](https://www.intel.com/content/www/us/en/docs/fortran-compiler/developer-guide-reference/2023-0/external.html). For instance, if we use `function Swop`, it would be
 
