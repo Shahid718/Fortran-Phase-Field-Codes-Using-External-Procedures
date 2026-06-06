@@ -58,13 +58,13 @@ For our example, the use of interface block is shown below. It starts with the k
 
 # **External procedures for scalars and arrays**
 
-![interface](images/scalar_vs_array.JPG)
-
 The example above shows the use of external statement for the `external subroutine`. When dealing with external functions, type must be declared with [external keyword](https://www.intel.com/content/www/us/en/docs/fortran-compiler/developer-guide-reference/2023-0/external.html). For instance, if we use `function Swop`, it would be
 
 **external Swop**              ! For subroutine
 
 **real, external :: Swop**     ! For function
+
+![interface](images/scalar_vs_array.JPG)
 
 For a function returning array, the type declaration statement is not sufficient; It works only for scalars. When the function [return type is array](https://www.intel.com/content/www/us/en/docs/fortran-compiler/developer-guide-reference/2023-2/procedures-that-require-explicit-interfaces.html#GUID-79A3D50D-99F2-409F-AE8A-6A84FD1E47FA), only the interface blocks can be used. Therefore we only use interface blocks when we deal with the functions. The subroutine codes; however, use both &mdash; external statement and interface blocks.
 
