@@ -11,7 +11,8 @@ pure function Laplacian ( order_parameter)
 	dy = 1
 
 
-    do concurrent ( i = 1 : Nx, j= 1 : Ny )
+    do i = 1 , Nx
+	   do j= 1 , Ny
 
        jp = j + 1
        jm = j - 1
@@ -28,7 +29,7 @@ pure function Laplacian ( order_parameter)
             order_parameter(i,jm) + order_parameter(i,jp) - &
             4.0*order_parameter(i,j))  / ( dx*dy )              
 
-
+       end do
     end do
 
   end function Laplacian
